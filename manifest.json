@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Instagram Spoiler Blocker",
+    "version": "1.0",
+    "description": "Blocks spoiler content on Instagram and allows users to enter the Spoiler World.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.instagram.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
